@@ -1,3 +1,12 @@
-#Basic nim program
+#Advent Of Code Problem 1
 
-echo "I can compile nim"
+proc processInputFile() = 
+    for line in lines "aoc1input.txt":
+        echo line
+
+proc main() =
+  const START_NUM = 50
+  processInputFile()
+
+when isMainModule:
+  main()
